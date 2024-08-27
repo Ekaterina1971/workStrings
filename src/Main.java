@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        // Задача №1
+        System.out.println("Задача №1");
+        String fistName = "Ivanov";
+        String middleName = "Ivan";
+        String lastName = "Ivanovich";
+        String fullName = fistName + " " + middleName + " " + lastName;
+        System.out.println("Ф.И.О. сотрудника - " + fullName);
     }
 }
