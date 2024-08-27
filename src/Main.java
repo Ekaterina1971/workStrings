@@ -7,5 +7,9 @@ public class Main {
         String lastName = "Ivanovich";
         String fullName = fistName + " " + middleName + " " + lastName;
         System.out.println("Ф.И.О. сотрудника - " + fullName);
+        // Задача №2
+        System.out.println("Задача №2");
+        String fuulName = fistName + " " + middleName + " " + lastName;
+        System.out.println(fuulName.toUpperCase());
     }
 }
