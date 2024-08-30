@@ -20,9 +20,9 @@ public class Main {
     public static int distanceTime(int km){
         if (km <= 20) {
             return 1;
-        } else if (km > 20 && km < 60) {
+        } else if (km > 20 && km <= 60) {
             return 2;
-        } else if (km >= 60 && km < 100) {
+        } else if (km > 60 && km <= 100) {
             return 3;
         } else {
             return 0;
@@ -40,10 +40,10 @@ public class Main {
         applicationSelection(clientOs, clientDeviceYear);
         // Задача №3
         System.out.println("Задача №3");
-        int deliveryDistance = 120;
+        int deliveryDistance = 70;
         int days = distanceTime(deliveryDistance);
         if (days > 0) {
-            System.out.println("Потребуется дней: " + days + " срок доставки.");
+            System.out.println("Потребуется дней для доставки: " + days);
         } else {
             System.out.println("Доставки нет.");
         }
