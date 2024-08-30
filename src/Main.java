@@ -17,6 +17,17 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для Android по ссылке.");
         }
     }
+    public static int distanceTime(int km){
+        if (km <= 20) {
+            return 1;
+        } else if (km > 20 && km < 60) {
+            return 2;
+        } else if (km >= 60 && km < 100) {
+            return 3;
+        } else {
+            return 0;
+        }
+    }
     public static void main(String[] args) {
        // Задача №1
         System.out.println("задача №1");
@@ -27,5 +38,14 @@ public class Main {
         int clientOs = 0;
         int clientDeviceYear = 2020;
         applicationSelection(clientOs, clientDeviceYear);
+        // Задача №3
+        System.out.println("Задача №3");
+        int deliveryDistance = 120;
+        int days = distanceTime(deliveryDistance);
+        if (days > 0) {
+            System.out.println("Потребуется дней: " + days + " срок доставки.");
+        } else {
+            System.out.println("Доставки нет.");
+        }
     }
 }
